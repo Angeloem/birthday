@@ -1,0 +1,107 @@
+.words{
+    position: relative;
+}
+
+#first{
+    color: whitesmoke;
+    font-size: 10em;
+    position: absolute;
+    top: 500px;
+    left: 370px;
+    animation: goUpDown 8s 3s linear forwards;
+}
+
+#happy, #birthday{
+    color: white;
+    position: absolute;
+
+    font-size: 12em;
+}
+
+#happy{
+    left: -950px;
+    animation: happy 4s 9s linear forwards;
+}
+
+#birthday{
+    left: 1500px;
+
+    animation: birthday 4s 9s linear forwards;
+}
+
+
+@keyframes birthday {
+    0%{
+        left: 700px;
+    }
+    2%{
+        left: 600px;
+    }
+    50%{
+        left: 100px;
+    }
+    95%{
+        left: 600px;
+        opacity: 1;
+    }
+    100%{
+        left: 700px;
+        opacity: 0;
+    }
+}
+@keyframes happy {
+    0%{
+        left: -500px;
+    }
+    2%{
+        left: 100px;
+    }
+    50%{
+        left: 500px;
+    }
+    95%{
+        left: 100px;
+        opacity: 1;
+    }
+    100%{
+        left: -500px;
+        opacity: 0;
+    }
+}
+@keyframes goUpDown {
+    0%{
+        opacity: 0;
+        top: 50px;
+        color: dodgerblue;
+    }
+
+    10%{
+        top: 50px;
+        opacity: .4;
+        color: maroon;
+    }
+
+    45%{
+        top: 50px;
+        color: white;
+        opacity: 1;
+    }
+
+    55%{
+        top: 50px;
+        color: white;
+        opacity: 1;
+    }
+
+    90% {
+        top: 540px;
+        color: maroon;
+        opacity: .4;
+    }
+
+    100%{
+        opacity: 0;
+        top: 600px;
+        color: dodgerblue;
+    }
+}
